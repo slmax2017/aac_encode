@@ -1,1 +1,0 @@
-/usr/bin/c++   -g   CMakeFiles/aac.dir/src/aac_encode.cpp.o  -o aac -rdynamic -Wl,-Bstatic -lfdk-aac -Wl,-Bdynamic 

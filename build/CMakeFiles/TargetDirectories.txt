@@ -1,3 +1,0 @@
-/home/slmax/work/code/aac_encode/build/CMakeFiles/edit_cache.dir
-/home/slmax/work/code/aac_encode/build/CMakeFiles/rebuild_cache.dir
-/home/slmax/work/code/aac_encode/build/CMakeFiles/aac.dir
