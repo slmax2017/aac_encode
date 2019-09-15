@@ -138,7 +138,7 @@ fail:
 int main()
 {
 	AAC_Encode_Ctx *aac_ctx = NULL;
-	AACENC_ERROR aacerr = init_AAC_ctx(&aac_ctx, 48000, MODE_2, 128000);
+	AACENC_ERROR aacerr = init_AAC_ctx(&aac_ctx, 48000, MODE_2, 32000);
 	if (AACENC_OK != aacerr) {
 		cout << "error appear" << endl;
 		return 0;
@@ -151,9 +151,9 @@ int main()
 	char *frame = new char[1024 * 8];
 	int	frame_len = 1024 * 8;
 
-	unsigned int fileSize = getfilesize(IN_FILE_NAME);
+	unsigned int fileSize = getfilesize(IN_FILE_NAME);	   
 
-	int read_len = 0;
+	int read_len = 0;												   
 	int read_count = 0;
 
 	while (1) {
