@@ -1,0 +1,6 @@
+*.o
+*.pcm
+*.mp3
+*.aac
+./build/*
+*.a

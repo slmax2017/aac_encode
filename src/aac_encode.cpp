@@ -138,7 +138,7 @@ fail:
 int main()
 {
 	AAC_Encode_Ctx *aac_ctx = NULL;
-	AACENC_ERROR aacerr = init_AAC_ctx(&aac_ctx, 48000, MODE_2, 32000);
+	AACENC_ERROR aacerr = init_AAC_ctx(&aac_ctx, 48000, MODE_2, 64000);
 	if (AACENC_OK != aacerr) {
 		cout << "error appear" << endl;
 		return 0;
@@ -160,7 +160,7 @@ int main()
 		memset(pcm_buf, 0, aac_ctx->ulPCM_Len);
 		memset(frame, 0, 1024 * 8);
 		frame_len = 1024 * 8;
-		read_len = read(in_fd, pcm_buf, aac_ctx->ulPCM_Len);
+		read_len = read(in_fd, pcm_buf, aac_ctx->ulPCM_Len);   
 		if (read_len < 0) {
 			cout << strerror(errno) << endl;
 			break;
