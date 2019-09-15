@@ -138,7 +138,7 @@ fail:
 int main()
 {
 	AAC_Encode_Ctx *aac_ctx = NULL;
-	AACENC_ERROR aacerr = init_AAC_ctx(&aac_ctx, 48000, MODE_2, 64000);
+	AACENC_ERROR aacerr = init_AAC_ctx(&aac_ctx, 48000, MODE_2, 96000);
 	if (AACENC_OK != aacerr) {
 		cout << "error appear" << endl;
 		return 0;
